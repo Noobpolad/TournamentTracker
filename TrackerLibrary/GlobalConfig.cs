@@ -56,31 +56,5 @@ namespace TrackerLibrary
         {
             return ConfigurationManager.AppSettings[key];
         }
-
-        /// <summary>
-        /// Sanitize the string
-        /// </summary>
-        /// <param name="str"></param>
-        /// <returns></returns>
-        public static string StringToCSVCell(string str)
-        {
-            str = str.Trim();
-            bool mustQuote = (str.Contains(",") || str.Contains("\"") || str.Contains("\r") || str.Contains("\n"));
-            if (mustQuote)
-            {
-                StringBuilder sb = new StringBuilder();
-                sb.Append("\"");
-                foreach (char nextChar in str)
-                {
-                    sb.Append(nextChar);
-                    if (nextChar == '"')
-                        sb.Append("\"");
-                }
-                sb.Append("\"");
-                return sb.ToString();
-            }
-
-            return str;
-        }
     }
 }
