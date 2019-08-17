@@ -1,9 +1,7 @@
 # TournamentTracker
 My first 'huge' project in c# 
 
-The tournament tracker program gives you the ability to create your oun tournaments and track how your favorite teams proceed.
-When you get the code, open the solution in visual studio and set TrackerUI as a StartUp project. Run the program.
-The program supports two modes SQL mode (With the connection to local SQL server) and TXT mode (Default mode, the text files will be created automatically). 
+The tournament tracker program gives you the ability to create your oun tournaments and track how your favorite teams proceed. In order to use .exe file you will need have 'Microsoft SQL Server Management Studio' installed on your PC. The program supports two modes SQL mode (With the connection to local SQL server) and TXT mode (Default mode, the text files will be created automatically). 
 
 In order to use the SQL mode you need to have 'Microsoft SQL Server Management Studio':
 
